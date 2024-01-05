@@ -2,6 +2,37 @@
 
 # Smartwatch App Privacy Policy Review (focused on AI/ML privacy)
 
+## Contents
+
+- [Smartwatch App Privacy Policy Review (focused on AI/ML privacy)](#smartwatch-app-privacy-policy-review-focused-on-aiml-privacy)
+  - [Contents](#contents)
+  - [Background](#background)
+  - [Problem statement](#problem-statement)
+  - [Research questions](#research-questions)
+  - [Objectives](#objectives)
+  - [Scope and limitations](#scope-and-limitations)
+- [Privacy policy review](#privacy-policy-review)
+    - [Quick result table](#quick-result-table)
+    - [Commentary on privacy policies](#commentary-on-privacy-policies)
+    - [Fitbit](#fitbit)
+    - [Garmin Connect](#garmin-connect)
+    - [Apple Health](#apple-health)
+    - [Mi Fitness (Xiaomi Wear)](#mi-fitness-xiaomi-wear)
+    - [Zepp Life (former Mi Fit)](#zepp-life-former-mi-fit)
+    - [Zepp (Amazfit)](#zepp-amazfit)
+    - [Huawei Health](#huawei-health)
+    - [Samsung Health](#samsung-health)
+    - [Whoop](#whoop)
+    - [Gadgetbridge - Privacy-oriented open-source project](#gadgetbridge---privacy-oriented-open-source-project)
+- [Fitness analytics use-cases](#fitness-analytics-use-cases)
+    - [Activity classification](#activity-classification)
+    - [Sleep stage classification](#sleep-stage-classification)
+    - [Sleep quality score](#sleep-quality-score)
+    - [Data abnormality detection](#data-abnormality-detection)
+    - [Menstrual cycle tracking](#menstrual-cycle-tracking)
+    - [Walking steadiness](#walking-steadiness)
+    - [Exercise recommendations](#exercise-recommendations)
+
 ## Background
 
 There are many popular fitness tracking apps on the market, usually joined with the purchase of their respective hardware (wearable band, smartwatch). There is also a high probability the reader uses one as well. The dark side of these apps and wearable devices is about information privacy, as society considers medical and biometric data highly sensitive. Fortunately, there are a few examples of privacy-oriented open-source fitness tracker apps. But what happens when we would like to use AI/ML-powered analytics using these data? Use cases for such analytics would be for example sleep quality diagnosis, sleep schedule recommendation, exercise recommendations, health condition risk assessment, etc.
@@ -216,6 +247,10 @@ According to the focused metrics of this review, the Samsung Health app gets **0
 
 **-TBD-**
 
+## Gadgetbridge - Privacy-oriented open-source project
+
+When considering the viability of our project, we had to consider either developing complete application system from scratch, or preferably contributing our knowledge and know-how to already established open-source project. [Gadgetbridge][010900] is the best-known complete solution for communicating with and managing wearable devices. Its goal is to replace closed-source vendor-specific apps and allow users to retain most of the functionality of vendor provided apps. It retains all the biometric data locally and supports visualization of the data. Although, as you might have guessed, the data processing is limited to basic statistics. There is also sleep stage classification functionality, but when we explored the code further and read through relevant research papers, it appears that the smartwatches seldom use some kind of statistical algorithm that is not as accurate as neural net models. In this context, Gadgetbridge serves as data visualizer. This is not a bad thing and can be mostly as useful as vendor apps, but there is certainly room for improvement. Its [source code][010901] is available on Github.
+
 [010000]: https://www.fitbit.com/global/us/legal/privacy-policy "Fitbit privacy policy"
 [010001]: https://noyb.eu/en/your-fitbit-useless-unless-you-consent-unlawful-data-sharing "noyb: Fitbit complaints"
 [010002]: https://www.theverge.com/2021/1/14/22188428/google-fitbit-acquisition-completed-approved "The Verge: Google Fitbit acquisition"
@@ -251,6 +286,9 @@ According to the focused metrics of this review, the Samsung Health app gets **0
 [010701]: https://foundation.mozilla.org/en/privacynotincluded/samsung-galaxy-watch4/ "Mozilla: Samsung Galaxy Watch 4"
 
 [010800]: https://www.whoop.com/us/en/full-privacy-policy/ "Whoop: privacy policy"
+
+[010900]: https://gadgetbridge.org/ "Gadgetbridge home page"
+[010901]: https://codeberg.org/Freeyourgadget/Gadgetbridge "Gadgetbridge source code"
 
 # Fitness analytics use-cases
 
