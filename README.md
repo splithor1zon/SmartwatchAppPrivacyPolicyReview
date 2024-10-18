@@ -1,4 +1,4 @@
-***WIP** - Feel free to contribute!*
+***WIP** - Accepting suggestions, just create a new issue.* 🤝
 
 # Smartwatch App Privacy Policy Review (focused on AI/ML privacy)
 
